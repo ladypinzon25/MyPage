@@ -4,7 +4,8 @@
     height:60px;
 }
 img{
-    width: 400px; height: 320px;
+    /*width: 400px; height: 320px;*/
+    max-width: 325px; max-height: 270px;
     /*border:3px solid #0099cc;*/
 
 }
@@ -24,7 +25,7 @@ body {
     letter-spacing: 0.01em;
     line-height: 1.6em;
     margin: 0;
-    padding: 100px; }
+    padding:  0 100px; }
 h1,h6,#proyectos,#contactame  {
      font-size: 45px;
      line-height: 0.8em;
@@ -156,7 +157,7 @@ select:focus {
 }
 .seccion3{
     color: white !important;
-    height:190px;
+    height:350px;
     text-align: center;
 
 }
@@ -557,6 +558,37 @@ h1{
 #carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(380px);}
 #carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(380px);}
 
+#carousel1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 20s infinite linear;
+}
+#carousel1:hover{
+    animation-play-state: paused;
+}
+#carousel1 figure{
+    display: block;
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    left: 10px;
+    top: 10px;
+    /*background: black;*/
+    overflow: hidden;
+    border: solid 3px darkcyan;
+}
+#carousel1 figure:nth-child(1){transform: rotateY(0deg) translateZ(380px);}
+#carousel1 figure:nth-child(2) { transform: rotateY(40deg) translateZ(380px);}
+#carousel1 figure:nth-child(3) { transform: rotateY(80deg) translateZ(380px);}
+#carousel1 figure:nth-child(4) { transform: rotateY(120deg) translateZ(380px);}
+#carousel1 figure:nth-child(5) { transform: rotateY(160deg) translateZ(380px);}
+#carousel1 figure:nth-child(6) { transform: rotateY(200deg) translateZ(380px);}
+#carousel1 figure:nth-child(7) { transform: rotateY(240deg) translateZ(380px);}
+#carousel1 figure:nth-child(8) { transform: rotateY(280deg) translateZ(380px);}
+#carousel1 figure:nth-child(9) { transform: rotateY(320deg) translateZ(380px);}
+
 img{
     -webkit-filter: grayscale(1);
     cursor: pointer;
@@ -576,76 +608,6 @@ img:hover{
     }
 }
 
-/*Inspirado por http://codepen.io/miroot/pen/rnvkG*/
-
-.thumb-viewer{
-    display:none;
-    z-index: 10;
-}
-.view-open{overflow:hidden;}
-.view-open .thumb-viewer{
-    display:block;
-    background:rgba(0,0,0,0.7);
-    position:fixed;
-    left:0; right:0; top:0; bottom:0;
-}
 .viewer-body{
-    margin:12.5vh 12.5vw 12.5vh 12.5vw;
-    width:800px;
-    position:absolute;
-    height:600px;
-    left:0; right:0; top:0; bottom:0;
-    text-align:center;
-}
-.viewer-body img{
-    width:auto;
-    max-width:75vw;
-    height:75vh;
-}
-.prev, .next{
-    display:inline-block;
-    width:35px;
-    height:35px;
-    border-top:5px solid #bbb;
-    border-left:5px solid #bbb;
-    transform:rotate(-45deg);
-    -moz-transform:rotate(-45deg);
-    -webkit-transform:rotate(-45deg);
-    cursor:pointer;
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:15px;
-    margin:auto 15px;
-    opacity:0.6;
-    z-index:5;
-}
-.next{
-    border:none;
-    border-bottom:5px solid #bbb;
-    border-right:5px solid #bbb;
-    left:auto;
-    right:15px;
-}
-.close{
-    color:#fff;
-    position: absolute;
-    right:15px;
-    top:5px;
-    font-size:32px;
-    font-family: Helvetica;
-    font-weight:lighter;
-    opacity:0.6;
-    cursor:pointer;
-}
-.prev:hover, .next:hover, .close:hover{opacity:1;}
-
-
-@media screen and (max-device-height: 700px) and (max-device-width: 400px) {
-    .viewer-body img{
-        width:auto;
-        margin-top: 20vh;
-        max-height:30vh;
-
-    }
-}
+    width: 90vw;
+    margin: 9vw;}
