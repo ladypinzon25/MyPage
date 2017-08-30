@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Titulo</title>
-
+    <link rel="stylesheet" href="./css/gallery.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
           integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
@@ -33,15 +33,34 @@
         <label for="tab2-1">Acerca de mí</label>
         <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
         <div>
-            <h6>Biografía</h6>
+            <h6>Información</h6>
             <h5 class="invisible">invisible</h5>
-            <p>Naci en Bogotá el 25 de julio de 1997</p>
+            <div class="informacion">
+            <p >Nací en Colombia, Bogotá en el año de 1997, donde tambien resido actualmente.
+                A lo largo de mi vida transcurri por tres colegios, en los cuales, me destaque
+                por excelencia academica, dado que desde pequeña tuve gran sed de aprendizaje.
+                Esto me permitio llegar a la eduacion superior en la Universidad de los Andes en
+                el año 2015, donde decidi estudiar Ingenieria de Sistemas y Computación, la carrera
+                de mis sueños y en donde queria explotar todos mis conocimientos. Actualmente curso
+                sexto semestre de ocho semestres que conforman la carrera.
+            </p>
+                <h1 class="invisible">invisible</h1>
+            <p>
+                Durante todo mi transcurro universitario he aprendido sobre diferentes areas de la
+                computacion como algoritmos formales, sistemas transaccionales y bases de datos, arquitectura
+                empresarial y de software, infraestructura computacional y desarrollo con tecnologias web.
+                Todos estos campos son de gran interes para mi, pero mi enfoque principal se encamina al desarrollo web.
+            </p>
+                <h1 class="invisible">invisible</h1>
+            <p>
+                Ademas de mis conocimientos academicos y profesionales, soy una persona responsable, bastante dinámica,
+                con deseos de superación y mis metas están basadas en el logro de objetivos claros. También aprendo de
+                manera rápida y cumplo con la puntualidad, honestidad y responsabilidad en las distintas actividades,
+                proyectos y trabajos que realizo.
+            </p>
+            </div>
             <h5 class="invisible">invisible</h5>
-            <h6>Perfil</h6>
-            <h5 class="invisible">invisible</h5>
-            <p>Soy una persona responsable, bastante dinámica, con deseos de superación y mis metas están basadas en el
-                logro de objetivos claros; aprendo rápido y cumplo de manera adecuada con puntualidad, honestidad y
-                responsabilidad en las distintas actividades que realizo. </p>
+
 
         </div>
     </div>
@@ -156,12 +175,16 @@
     <div class="col-md-12"></div>
 
     <div class="container">
-        <div id="carousel">
-            <figure><img src="./img/vinilo1.jpg" alt=""></figure>
-            <figure><img src="./img/vinilo2.jpg" alt=""></figure>
-            <figure><img src="./img/vinilo3.jpg" alt=""></figure>
-            <figure><img src="./img/vinilo4.png" alt=""></figure>
-            <figure><img src="./img/vinilo6.png" alt=""></figure>
+        <div id="carousel" >
+            <figure><a class="thumbnailC"><img src="./img/vinilo1.jpeg" alt=""></a></figure>
+            <figure><a class="thumbnailC"><img src="./img/vinilo2.jpeg" alt=""></a></figure>
+            <figure><a class="thumbnailC"><img src="./img/vinilo3.jpg" alt=""></a></figure>
+            <figure><a class="thumbnailC"><img src="./img/vinilo4.png" alt=""></a></figure>
+            <figure><a class="thumbnailC"><img src="./img/vinilo5.png" alt=""></a></figure>
+            <figure><a class="thumbnailC"><img src="./img/vinilo6.png" alt=""></a></figure>
+            <figure><a class="thumbnailC"><img src="./img/vinilo7.png" alt=""></a></figure>
+            <figure><a class="thumbnailC"><img src="./img/vinilo8.JPG" alt=""></a></figure>
+            <figure><a class="thumbnailC"><img src="./img/vinilo9.JPG" alt=""></a></figure>
 
         </div>
     </div>
@@ -212,7 +235,7 @@
         <div class="linkedin"></div>
     </div>
 </div>
-
+<script src="./js/gallery.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="./js/Main.js"></script>
