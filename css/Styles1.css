@@ -3,12 +3,13 @@
 
     height:60px;
 }
-img{
-    /*width: 400px; height: 320px;*/
-    max-width: 325px; max-height: 270px;
-    /*border:3px solid #0099cc;*/
+.thumbnailC img{
+/*width: 400px; height: 320px;*/
+max-width: 325px; max-height: 270px;
+/*border:3px solid #0099cc;*/
 
 }
+
 .borde{
     margin: 0.2%;
  }
@@ -610,4 +611,5 @@ img:hover{
 
 .viewer-body{
     width: 90vw;
-    margin: 9vw;}
+    margin: 5vw;}
+
