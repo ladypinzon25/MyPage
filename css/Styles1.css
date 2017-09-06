@@ -21,6 +21,9 @@ body {
     background: #191828;
     color: #efedef;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
+    /**
+    Alejandro Cordoba: Deberías usar el tamaño de letra en em.
+    **/
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 0.01em;
@@ -28,8 +31,14 @@ body {
     margin: 0;
     padding:  0 100px; }
 h1,h6,#proyectos,#contactame  {
+     /**
+    Alejandro Cordoba: Deberías usar el tamaño de letra en em.
+    **/
      font-size: 45px;
      line-height: 0.8em;
+            /**
+    Alejandro Cordoba: El valor de 'a' el cual es la opacidad, es de 0 a 1 por lo que 4 no es un valor valido.
+    **/
      color: rgba(28,193,190,4);
  }
 #proyectos{
@@ -39,9 +48,15 @@ h1,h6,#proyectos,#contactame  {
 h6, #lp, #ingles {
     font-size: 30px;
     line-height: 0.8em;
+        /**
+    Alejandro Cordoba: El valor de 'a' el cual es la opacidad, es de 0 a 1 por lo que 4 no es un valor valido.
+    **/
     color: rgba(28,193,190,4);
 }
 #vinilo, #medicAndes {
+         /**
+    Alejandro Cordoba: Deberías usar el tamaño de letra en em.
+    **/
     font-size: 30px;
     color:rgb(237, 54, 98);
     margin: 4%;
@@ -171,6 +186,25 @@ select:focus {
     text-indent:-666em;
     overflow:hidden;
 }
+     /**
+    Alejandro Cordoba: Aquí tienes 4 clases que son practicamente iguales (solo cambia el background), hubieras podido usar una 
+    clase "icono" que tuviera todo el style y las demás clases solo extendieran el background. Ejemplo:
+.icono{
+    height: 50px;
+    width: 50px;
+
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+
+    display:block;
+    margin:auto;
+}
+.facebook {
+    background: url('../img/facebook.png');
+}
+    **/
 .facebook{
 
     background: url('../img/facebook.png');
