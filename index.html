@@ -1,9 +1,12 @@
+   <!-- Alejandro Cordoba: Usas mucho un div con clase "invisible", deberías considerar el uso de margenes para obtener un 
+código más limpio, si un elemento parece no ser afectado por las margenes recuerda que a que puedes usar display: block o inline-block 
+para que estos se carguen como bloques dentro del html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Titulo</title>
-
+<!-- Alejandro Cordoba: Se podrían incluir meta tags de Autor, descripción y keywords-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
           integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/gallery.css">
@@ -11,14 +14,16 @@
 
 </head>
 <body>
-
+<!-- Alejandro Cordoba: Este tag sobra--> 
 </div>
 <div class="row section seccion2">
 
     <div class="col-md-4">
         <div id="imagen2"></div>
     </div>
+<!-- Alejandro Cordoba: No estas usando el ID en otro lugar por lo que este no es necesario-->    
     <div class="col-md-8" id="subtitulo">
+<!-- Alejandro Cordoba: Supongo que usaste el tag P y h2.invisible para "ocupar espacio", una mejor practica sería usar margenes en h1 -->  
         <p></p>
         <h2 class="invisible">invisible</h2>
         <h1>Lady Jeraldynne Pinzón Capera</h1>
@@ -34,6 +39,7 @@
         <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
         <div>
             <h6>Información</h6>
+            <!-- Alejandro Cordoba: De nuevo, en vez de usar un div "invisible" pudiste haber usado margenes (superiores) en la clase información -->
             <h5 class="invisible">invisible</h5>
             <div class="informacion">
                 <p>Nací en Colombia, Bogotá en el año de 1997, donde tambien resido actualmente.
@@ -44,6 +50,7 @@
                     de mis sueños y en donde queria explotar todos mis conocimientos. Actualmente curso
                     sexto semestre de ocho semestres que conforman la carrera.
                 </p>
+                <!-- Alejandro Cordoba: Aquí hubieras podido poner margenes (superiores) al tag p en vez de usar un div-->
                 <h1 class="invisible">invisible</h1>
                 <p>
                     Durante todo mi transcurro universitario he aprendido sobre diferentes areas de la
@@ -52,6 +59,7 @@
                     Todos estos campos son de gran interes para mi, pero mi enfoque principal se encamina al desarrollo
                     web.
                 </p>
+                <!-- Alejandro Cordoba: Aquí hubieras podido poner margenes (superiores) al tag p en vez de usar un div-->
                 <h1 class="invisible">invisible</h1>
                 <p>
                     Ademas de mis conocimientos academicos y profesionales, soy una persona responsable, bastante
@@ -63,6 +71,7 @@
                     proyectos y trabajos que realizo.
                 </p>
             </div>
+            <!-- Alejandro Cordoba: Aquí información hubiera podido tener una margen inferior en vez de usar un div-->
             <h5 class="invisible">invisible</h5>
 
 
@@ -81,6 +90,7 @@
                     <!-- HTML5 -->
                     <p style="width:80%">HTML5</p>
                     <progress max="100" value="80" class="html5">
+                        <!-- Alejandro Cordoba: Puedes borrar los comentarios de las librerias que usas-->    
                         <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
                         <div class="progress-bar">
                             <span style="width: 80%"></span>
@@ -90,15 +100,17 @@
                     <!-- CSS3 -->
                     <p style="width:60%">CSS</p>
                     <progress max="100" value="60" class="css3">
+                        <!-- Alejandro Cordoba: Puedes borrar los comentarios de las librerias que usas--> 
                         <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
                         <div class="progress-bar">
                             <span style="width: 60%"></span>
                         </div>
                     </progress>
-
+                    <!-- Alejandro Cordoba: Puedes borrar los comentarios de las librerias que usas--> 
                     <!-- jQuery -->
                     <p style="width:50%">JavaScript</p>
                     <progress max="100" value="50" class="jquery">
+                    <!-- Alejandro Cordoba: Puedes borrar los comentarios de las librerias que usas--> 
                         <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
                         <div class="progress-bar">
                             <span style="width: 50%"></span>
@@ -160,14 +172,17 @@
 
 
 </div>
+<!-- Alejandro Cordoba: Este tag sobra--> 
 </div>
 <div class="row section seccionProyectos">
     <div class="col-md-12">
         <h4 id="proyectos">Proyectos</h4>
+           <!-- Alejandro Cordoba: Aquí hubieras podido poner margenes (inferiores) al tag h4 en vez de usar un div-->
         <h5 class="invisible">invisible</h5>
     </div>
     <div class="col-md-12">
         <h4 id="vinilo">Vinilo</h4>
+        <!-- Alejandro Cordoba: Aquí hubieras podido poner margenes (inferiores) al tag h4 en vez de usar un div-->
         <h5 class="invisible">invisible</h5>
     </div>
     <p class="descripcion">Vinilo es una aplicación web que permite conectar a músicos independientes con organizadores
@@ -177,7 +192,9 @@
         IntelliJ IDEA y las tecnologías de front-end HTML, CSS y JavaScript y las tecnologías de back-end Java y Play
         Framework.</p>
     <p class="descripcion">A continuación se muestran imagenes de la aplicación final de Vinilo. </p>
+    <!-- Alejandro Cordoba: Un tag p no puede encerrar a un div por lo que este tag no será leido por el navegador-->
     <p>
+    <!-- Alejandro Cordoba: Este tag sobra, no afecta de ninguna manera a la página-->
     <div class="col-md-12"></div>
 
     <div class="container">
@@ -196,6 +213,7 @@
     </div>
     </p>
     <div class="col-md-12">
+<!-- Alejandro Cordoba: Aquí hubieras podido poner margenes (superiores e inferiores) al id #medicAndes en vez de usar un div-->
         <h1 class="invisible">invisible</h1>
         <h1 class="invisible">invisible</h1>
         <h4 id="medicAndes">MedicAndes</h4>
@@ -229,7 +247,9 @@
         </p>
 
         <p class="descripcion">A continuación se muestran imagenes de la aplicación final de MedicAndes. </p>
+        <!-- Alejandro Cordoba: Un tag p no puede encerrar a un div por lo que este tag no será leido por el navegador-->
         <p>
+        <!-- Alejandro Cordoba: Este tag sobra, no afecta de ninguna manera a la página-->
         <div class="col-md-12"></div>
 
         <div class="container">
@@ -251,6 +271,7 @@
     </div>
 </div>
     <div class="row section seccion3">
+ <!-- Alejandro Cordoba: Aquí hubieras podido poner margenes (inferiores) al id carousel1 en vez de usar estos divs-->
         <div class="col-md-12"></div>
         <div class="col-md-12"></div>
         <div class="col-md-12">
@@ -280,7 +301,7 @@
             <div class="viewer-body"></div>
         </div>
     </div>
-
+ <!-- Alejandro Cordoba: Estos scripts deben estar en el header-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./js/gallery.js"></script>
